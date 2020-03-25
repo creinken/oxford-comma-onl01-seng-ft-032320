@@ -6,7 +6,7 @@ def oxford_comma(array)
       when 2
         string << array.join(" and ")
       else
-        string << array[0...-1].join(" , ") + " and " + array.last
+        string << array[0...-1].join(" , ") + ", and " + array.last
     end
     
     return string
