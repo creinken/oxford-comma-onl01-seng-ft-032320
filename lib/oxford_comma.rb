@@ -8,5 +8,5 @@ case length
       when 2
         array.join(" and ")
       else
-        array[0...-1].join(" , ")}#{options[:last_word_connector]}#{self[-1]}
+        array[0...-1].join(" , ")
     end
