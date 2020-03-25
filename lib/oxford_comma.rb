@@ -1,10 +1,11 @@
 def oxford_comma(array)
+  string = ""
   case array.length
       when 1
-        array.join()
+        string << array.join()
       when 2
-        array.join(" and ")
+        string << array.join(" and ")
       else
-        array[0...-1].join(" , ")
+        string << array[0...-2].join(" , ") + " and " + array.last
     end
 end
