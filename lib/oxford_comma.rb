@@ -2,4 +2,11 @@ def oxford_comma(array)
   array.join(", ")
 end
 
-"#{self[0...-1].join(options[:words_connector])}#{options[:last_word_connector]}#{self[-1]}"
+case length
+      when 1
+        array.join()
+      when 2
+        array.join(" and ")
+      else
+        array[0...-1].join(" , ")}#{options[:last_word_connector]}#{self[-1]}
+    end
